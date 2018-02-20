@@ -1,5 +1,6 @@
 @import "_fonts.scss";
 @import "partials/_header.scss";
+@import "partials/_pricing-table.scss";
 @import "partials/_footer.scss";
 
 * {
@@ -9,7 +10,7 @@
 }
 
 body {
-    height: 95.5vh;
+    height: 100vh;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
