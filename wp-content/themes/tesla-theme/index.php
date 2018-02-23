@@ -9,13 +9,10 @@
         the_post(); ?>
 
         <?php $features = get_post_meta( get_the_ID(), 'feature' ); ?>
-        <?php $button_label = get_post_meta( get_the_ID(), 'button-label', true ); ?>
         <?php $additional_info = get_post_meta( get_the_ID(), 'additional-info', true ); ?>
         <?php $price = get_post_meta( get_the_ID(), 'price', true ); ?>
+        <?php $button_label = get_post_meta( get_the_ID(), 'button-label', true ); ?>
 
-
-
-        <!-- <div class="pricing-table" id="post-&gt;""> -->
         <div <?php post_class("pricing-table"); ?>>
 
             <div class="pricing-table__header">
@@ -49,7 +46,6 @@
         </div>
     <?php endwhile; ?>
     <?php else: ?>
-        <p>Nie	ma	takiego	postu</p>
     <?php endif; ?>
     </div>
 
