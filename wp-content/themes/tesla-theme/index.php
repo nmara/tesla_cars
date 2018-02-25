@@ -8,26 +8,29 @@
         while (	have_posts() ) :
         the_post(); ?>
 
-        <?php $features = get_post_meta( get_the_ID(), 'feature' ); ?>
+        <?php $feature = get_post_meta( get_the_ID(), 'feature', true ); ?>
+        <?php $feature2 = get_post_meta( get_the_ID(), 'feature-2', true ); ?>
+        <?php $feature3 = get_post_meta( get_the_ID(), 'feature-3',true ); ?>
         <?php $additional_info = get_post_meta( get_the_ID(), 'additional-info', true ); ?>
         <?php $price = get_post_meta( get_the_ID(), 'price', true ); ?>
         <?php $button_label = get_post_meta( get_the_ID(), 'button-label', true ); ?>
+        <?php $thumbnail = get_field('thumbnail'); ?>
 
         <div <?php post_class("pricing-table"); ?>>
 
             <div class="pricing-table__header">
                 <h2 class="model-title"> <?php the_title(); ?> </h2>
                 <div class="separation"></div>
-                <?php the_post_thumbnail(); ?>
+                <?php if( $thumbnail ): ?>
+			<img class="thumbnail" src="<?php echo $thumbnail; ?>" />
+		<?php endif; ?>
             </div>
 
             <div class="pricing-table__content">
 
-                <?php
-                foreach ($features as $value) {
-                    echo "<p class='pricing-table__content__features'>$value</p>";
-                }
-                ?>
+                <p class='pricing-table__content__features'><?php echo $feature ?></p>
+                <p class='pricing-table__content__features'><?php echo $feature2 ?></p>
+                <p class='pricing-table__content__features'><?php echo $feature3 ?></p>
 
                 <div class="separation"></div>
 
