@@ -7,12 +7,12 @@
     </div>
 
     <div class="user-action">
-        <div class="user-action__add-new-car">
-            <a href="http://localhost/pricing-table-tesla/index.php/add-post/" class="user-action_add-new-car__btn">Add a new tesla car</a>
-        </div>
-        <div class="user-action__edit-car">
-            <a href="http://localhost/pricing-table-tesla/index.php/posts-list/">Modify tesla cars</a>
-        </div>
+        <a href="http://localhost/pricing-table-tesla/index.php/posts-list/" class="user-action__box edit-car">
+            Modify tesla cars
+        </a>
+        <a href="http://localhost/pricing-table-tesla/index.php/add-post/" class="user-action__box add-new-car">
+            Add a new tesla car
+        </a>
     </div>
 
 </div>
