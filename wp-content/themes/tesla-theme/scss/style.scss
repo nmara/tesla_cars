@@ -2,6 +2,9 @@
 @import "partials/_header.scss";
 @import "partials/_pricing-table.scss";
 @import "partials/_profile.scss";
+@import "partials/_add-post.scss";
+@import "partials/_register.scss";
+@import "partials/_edit.scss";
 @import "partials/_footer.scss";
 
 * {
@@ -10,12 +13,17 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+    //position: relative;
+}
+
 body {
-    height: 100vh;
+    height: 100%;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     position: relative;
     font-family: "Myriad Pro", serif;
 }
@@ -23,4 +31,49 @@ body {
 .container {
     width: 81vw;
     margin: 0 auto;
+}
+
+.wrap {
+    min-height: 84vh;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-image: none;
+        background-color: darken(#f8f9f9, 5%);
+        height: auto;
+    }
+    .wrap {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    html {
+        height: 100%;
+        //min-height: 84vh;
+    }
+
+    body {
+        background-image: none;
+        background-color: darken(#f8f9f9, 5%);
+        height: 100%;
+        //min-height: 84vh;
+    }
+
+    .wrap {
+        height: 100%;
+        min-height: 100%;
+    }
+    .tesla-cars {
+        height: 100%;
+    }
+
+    .footer__container {
+        position: sticky;
+        bottom: 0;
+        //margin-top: 8vh;
+    }
 }

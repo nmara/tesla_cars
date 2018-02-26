@@ -22,9 +22,9 @@
 
                     <div class="header__nav__menu" id="header-nav-menu">
                         <ul class="header__nav__menu__bar">
-                            <li><a href="http://localhost/pricing-table-tesla/">Home</a></li>
+                            <li><a href="http://localhost/pricing-table-tesla/">Catalog</a></li>
+                            <li><a href=" http://localhost/pricing-table-tesla/index.php/profile/">Manage cars</a></li>
                             <li><a href=" http://localhost/pricing-table-tesla/index.php/log-in/">Log in</a></li>
-                            <li><a href=" http://localhost/pricing-table-tesla/index.php/profile/">Your profile</a></li>
                             <li><a href="http://localhost/pricing-table-tesla/index.php/register/">Sign up</a></li>
                         </ul>
                     </div>
@@ -32,3 +32,4 @@
 			</div>
 		</div>
 	</header>
+    <div class="wrap">

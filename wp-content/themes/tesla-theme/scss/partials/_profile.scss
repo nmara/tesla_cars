@@ -3,10 +3,11 @@
 }
 .user-action {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     height: 76vh;
-    padding-top: 4vh;
+    padding-top: 6vh;
 }
 
 .user-action__box {
@@ -18,10 +19,12 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 22px;
+    line-height: 30px;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .user-action__box:hover {
@@ -33,7 +36,13 @@
 
 .user-action__box:focus {
     box-shadow: none;
+    color: #fff;
 }
+
+.user-action__box:active {
+    color: #fff;
+}
+
 
 .user-action__box::before {
     content: "";

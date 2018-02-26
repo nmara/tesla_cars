@@ -1,0 +1,29 @@
+.posts-list {
+    padding-top: 6vh;
+}
+
+.posts-list__header {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: darken(#70D986, 30%);
+}
+
+li.bf-submission.publish {
+    margin-bottom: 0;
+}
+
+li.bf-submission.publish .item-title a {
+    text-decoration: none;
+    color: #37406c;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: font-size 0.5s;
+}
+
+li.bf-submission.publish .item-title a:hover {
+    color: darken(#37406c, 5%);
+    font-size: 18px;
+}

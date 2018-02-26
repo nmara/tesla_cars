@@ -1,15 +1,21 @@
 .tesla-cars {
     height: 84vh;
+    padding-top: 15vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .pricing-table {
     position: relative;
     width: 293px;
     height: 435px;
+}
+
+.pricing-table:nth-child(even) {
+    margin-top: -60px;
 }
 
 .pricing-table::before {
@@ -80,7 +86,6 @@
 }
 
 .pricing-table__btn {
-    display: block;
     width: 126px;
     height: 36px;
     background-color: #37406c;
@@ -93,6 +98,17 @@
     align-items: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+.pricing-table__btn:hover {
+    color: #fff;
+    background-color: darken(#37406c, 5%);
+}
+
+.pricing-table__btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
 }
 
 /*Category premium style*/
@@ -118,6 +134,10 @@
         .pricing-table__btn {
             background-color: #ea525c;
         }
+        .pricing-table__btn:hover {
+            color: #fff;
+            background-color: darken(#ea525c, 5%);
+        }
     }
 }
 
@@ -131,4 +151,20 @@
    background-color: #fff;
    box-shadow: 0 15px 30px rgba(216, 220, 224, 0.35);
    opacity: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+    .tesla-cars {
+        justify-content: center;
+        align-items: center;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        height: 100%;
+    }
+    .pricing-table:nth-child(even) {
+        margin: 0;
+    }
+    .pricing-table {
+        margin: 40px;
+    }
 }

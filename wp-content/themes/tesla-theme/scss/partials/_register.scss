@@ -1,0 +1,23 @@
+.register {
+    padding-top: 6vh;
+}
+
+input#register.submit.button {
+    width: 148px;
+    height: 42px;
+    background-color: #ea525c;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
-<?php echo do_shortcode("[wppb-register]") ?>
+<div class="container register">
+    <?php echo do_shortcode("[wppb-register role='author']") ?>
 </div>
 <?php get_footer(); ?>
